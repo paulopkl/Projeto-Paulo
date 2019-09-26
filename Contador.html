@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(69, 167, 248);
+            font-family: sans-serif;
+        }
+        .titulo, .rodape{
+            color: white;
+        }
+        .ctitulo, .crodape{
+            display: flex;
+            justify-content: center;
+        }
+        .rodape{
+            font-weight: 100;
+            font-size: 14pt;
+            font-style: italic;
+        }
+        .content{
+            width: 20rem;
+            height: auto;
+            background-color: white;
+            margin-left: 25%;
+            width: 50%;
+            border-radius: 12px;
+            box-shadow: 1px 1px 5px black;
+            padding-bottom: 5px;	
+        }
+        .row{
+            display: flex;
+            vertical-align: middle;
+        }
+        .tn, .numb{
+            display: inline;
+        }
+        .tn{
+            font-size: 17pt;
+
+        }
+        .numb{
+            height: 14pt;
+            margin-top: 1.33rem;
+            margin-left: 0.75rem;
+        }
+        button{
+            margin-top: 0.5rem;
+        }
+        .pr{
+            font-size: 18pt;
+            font-weight: 400;
+        }
+        .row, button, .pr, #con{
+            margin-left: 1.5rem;
+        }
+        #con{
+        	margin-bottom: 1rem;
+        }
+    </style>
+
+</head>
+<header>
+    <div class="ctitulo">
+        <h1 class="titulo">Vamos contar.</h1>
+    </div>
+</header>
+<section>
+    <div class="content">
+        <div class="row"><h1 class="tn">Inicio: </h1><input type="number" class="numb" id="inicio"></div>
+        <div class="row"><h1 class="tn">Fim: </h1><input type="number" class="numb" id="fim"></div>
+        <div class="row"><h1 class="tn">Passo: </h1><input type="number" class="numb" id="passo"></div>
+        <button id="contagem">Contar</button>
+        <h2 class="pr" id="pr1">Preparando a contagem...</h2>
+        <h1 id="con"></h1>
+    </div>
+</section>
+<footer>
+    <div class="crodape">
+        <h1 class="rodape">&copy Paulo Ricardo.</h1>
+    </div>
+</footer>
+
+<script type="text/javascript">
+        var contagem = document.getElementById("contagem");
+
+        contagem.addEventListener("click", function(){
+        	let c = document.getElementById("con");
+        	c.innerHTML = "";
+            document.getElementById("pr1").innerHTML = "Contando";
+            let ini = Number(document.getElementById("inicio").value);
+        	let fim = Number(document.getElementById("fim").value);
+        	let pas = Number(document.getElementById("passo").value);
+                for (ini; ini <= fim; ini += pas){
+                	    c.innerHTML += ini + ' <span>&#128073;&#127995;</span> ';
+                }
+                c.innerHTML += "<span>&#127383;</span>";
+        })
+</script>
+</html>

@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <title>Cursos Fáceis.</title>
+  </head>
+  <body>
+<!---------------------------------- Inicia o menu de navegação principal (cabeçalho) -------------------------------------------------->    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary"> <!-- Inicia Cabeçalho-->
+    <div class="container">
+    <a class="navbar-brand h1 mb-0" href="#" title="<3 Bootstrap">Site responsivo!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <!------------->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#ferramentas" id="fe"><i class="fa fa-wrench" aria-hidden="true"></i> Ferramentas.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#midia" id="mi"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Midia.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rodape" id="at"><i class="fa fa-cog" aria-hidden="true"></i> Atualizações.</a></li>
+          </ul>
+          <!-------------->
+          <ul class="navbar-nav ml-auto"> <!-- navbar collapse ao clickar em social -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Redes Sociais</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.facebook.com/paulo.ricardo.167189">Facebook</a>
+                <a class="dropdown-item" href="#">Instagram</a>
+                <a class="dropdown-item" href="#">Twitter</a>
+             </div>
+            </li>
+          </ul> <!-- Encerra navbar 2-->
+          <!------------>
+          <form class="form-inline">
+            <input class="form-control ml-4 mr-2" type="search" name="" placeholder="Buscar...">
+            <button class="btn btn-dark" type="submit">OK!</button>
+          </form>
+        </div>
+
+    </div> 
+   </nav> <!-- Encerra Cabeçalho-->
+<!---------------------------------- Inicia o carrossel (Slider) ---------------------------------------------------------->
+   <!-- Abaixo o carrossel de 4 imagens -->
+   <div id="carouselSite" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Abaixo o indicador de imagem do carrossel -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselSite" data-slide-to="1"></li>
+      <li data-target="#carouselSite" data-slide-to="2"></li>
+      <li data-target="#carouselSite" data-slide-to="3"></li>
+    </ol>
+    <!-- Encerra o indicador, numerador -->
+    <!-- Iniciar o carrossel -->
+    <div class="carousel-inner">  
+      <!-- \imagens --> 
+        <!-- Abaixo o carrossel da imagem 1 ----->
+      <div class="carousel-item active"> <!-- active quer dizer que inicia com ele -->
+        <img src="imagens/1.jpg" class="img-fluid d-block slid">
+          <div class="carousel-caption d-none d-md-block text-dark"> <!-- Display no tamanho md pra cima -->
+            <h3>CSS!</h3>
+            <p>Utilizado para modificação e estilização do design da pagina.</p>
+          </div>
+      </div>
+      <!-- Abaixo o carrossel da imagem 2 -->
+      <div class="carousel-item">
+        <img src="imagens/2-2.png" class="img-fluid d-block slid">         
+        <div class="carousel-caption d-none d-md-block text-dark">
+            <h3>HTML!!</h3>
+            <p>Utilizado para modificação das informações do website.</p>
+          </div>
+        </div>
+      <!-- Abaixo o carrossel da imagem 3 -->      
+      <div class="carousel-item">
+        <img src="imagens/3.jpg" class="img-fluid d-block slid">
+        <div class="carousel-caption d-none d-md-block text-light">
+            <h3>PHP!!</h3>
+            <p>Back-End voltado para modificações mecanicas e na parte do servidor.</p>
+          </div>
+      </div>
+      <!-- Abaixo o carrossel da imagem 4 -->    
+      <div class="carousel-item">
+        <img src="imagens/4.jpg" class="img-fluid d-block slid">
+          <div class="carousel-caption d-none d-md-block text-warning">
+            <h3>SQL!!</h3>
+            <p>Utiliza-se para criação e modificação do banco de dados.</p>
+          </div>
+      </div>
+      <!-- /imagens -->
+    </div>
+<!---------------------------------- Inicia o controle remoto do carrossel (slider) ------------------------------------------->
+      <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev"> 
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+   </div> 
+<!------------------------------------------- Título e subtitulo abaixo ---------------------------------------------->
+   <div class="container">
+    <div class="row">
+
+      <div class="col-12 text-center mt-5"> <!-- Inicia Título e parágrafo, tamanho total 12/12 , centralizado, com margem-top de 5/5 -->
+        <h1 class="display-3 font-weight-normal" onclick="trocar(this)"><i class="fa fa-code mr-4 text-primary" aria-hidden="true" alt="Clique Aqui"></i>Paulo Ricardo Alves de Almeida</h1>
+        <p class="font-weight-bold text-danger">Desenvolvi esse site como modelo experimental, as informações cabidas aqui tem como base minha experiência Academica/Profissional, além de conter informações sobre mim e informações que serve com o proposito de teste.</p>
+      </div> <!-- Encerra o Título e parágrado -->
+
+      <div class="row mb-5">
+<!---------------------------------- Inicia o Menu-de-Navegação lateral --------------------------------------------------------->
+        <div class="col-sm-6 col-md-3 mb-2"> <!-- Define divisão da tela 3/12 ou 1/4 ou 25% da tela -->
+          <nav id="navbarVertical" class="navbar navbar-light bg-light justify-content-center">
+            <nav class="nav nav-pills flex-column">
+
+              <a class="nav-link text-center active"> Menu. </a>
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link ml-3" href="#item1">Técnologias.</a> <!-- margem left 3/5-->
+                      <a class="nav-link ml-3" href="#item2">Front-End.</a> <!-- margem left 3/5-->
+                      <a class="nav-link ml-3" href="#item3">Back-End.</a> <!-- margem left 3/5-->
+                      <a class="nav-link ml-3" href="#item4">Um pouco sobre mim.</a> <!-- margem top 2/5-->
+                      <a class="nav-link ml-3" href="#item5">Nikola Tesla.</a> <!-- margem left 3/5-->
+                      <a class="nav-link ml-3" href="#item6">Linus Torvalds.</a> <!-- margem left 3/5-->
+                    </nav>
+
+             </nav>
+          </nav>
+        </div>
+<!---------------------------------- Encerra o Menu-de-Navegação lateral ---------------------------------------------------------->
+        <div class="col-sm-6 col-md-9" id="Mnavega">
+          
+          <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+            
+            <h4 id="item1">Técnologias!!</h4>
+            	<p>Bootstrap, Jquery e Popper são algumas das técnologias utilizada neste WebSite. Mas estou me dedicando a aprender sempre novas tecnologias.</p>
+                <hr />
+            <h5 id="item2">Front-End?</h5>
+            	<p>Bootstrap, um framework que deixa o site responsivo possuindo uma folha de cascata(Css3) bem refinada. Jquery um framework que está rodando agora e que é capaz de automatizar o Javascript, deixando os scripts muito mais práticos.</p>
+                <hr />
+            <h5 id="item3">Back-End!</h5>
+            	<p>PHP, linguagem de desenvolvimento server-side, está rodando neste momento no servidor capturando dados pelos inputs afim de informar por meio de E-Mails as pessoas que tenham se cadastrado. Me interessei no Back-End quando comecei a desenvolver no MySQL utlizando SQL.</p>
+                <hr />
+            <div class="row mt-3 mb-4 mr-3" id="item4">
+                 <div class="col-md-3 col-sm-12">
+                    <h4>Paulo Ricardo.</h4>
+                    <img src="imagens/paulo2.jpg" width="195px" height="250px" class="img-fluid" title="Eu! Paulo Ricardo.">
+                 </div>
+            	   <div class="col-md-9 col-sm-12">
+                  <h4>Contando um pouco sobre mim.</h4>
+                    <p>Olá, vou explicar algumas coisas que faço no meu tempo livre: Leitura! não. Não leio muitos livros prefiro adquirir conhecimento em artigos ou em fóruns na internet ou em videos, dificilmente leio algum E-book. Estudo muito, principalmente programação que é a área que me apaixonei, mais especificamente o desenvolvimento-web mas não me estreito de aprender novas tecnologias como automação e deep Learning.</p>
+                    <p>Busco para meu futuro ingressar no ensino superior nos cursos de Engenharia de Software ou Ciência da Computação na qual mais me identifico. Espero sempre aumentar minha bagagem intelectual, e nunca menosprezo um aprendizado novo ou uma nova etapa da minha vida.</p>
+                        <hr />
+                  <h4>Mais um pouco.</h4>
+                    <p>Tenho apenas 17 anos, Trabalhei como Aprendiz, mas ainda não tive a oportunidade de trabalhar com programação, dedico parte do meu tempo a contribuir em projetos Open-Source no GitHub alem de outros projeto pessoais como este site, estou iniciando no Javascript por que percebi sua potência e seu impacto na comunidade, observei um mercado muito grande para essa tecnologia por isso estou investindo nela.</p>
+                  </div>
+             </div>      
+                  <hr />
+            <div class="row mt-3 mb-4 mr-3" id="item5">
+              	<div class="col-md-3 col-sm-12">
+                  <h5>Nikola Tesla 07/1856 - 01/1943</h5>
+              		<img src="imagens/Tesla.jpg" title="Nikola Tesla." class="img-fluid">
+              	</div>
+              	<div class="col-md-9 col-sm-12">
+                  <h4 class="mb-5">REFERÊNCIA para sempre seguir em frente.</h4>
+              	   <p>Nikola Tesla foi um inventor brilhante, gênio da elétrica e da mecanica da segunda metade do século 19. Foi tambem o pai e criador da energia Alternada, dentre os preojetos que ele teve está a criação da torre de Tesla, e revolucionou o mundo.</p>
+              	   <p>Uso como exemplo de alguem brilhante, que não foi valorizado em seu tempo. Busco nele determinação para sempre superar as barreiras e sempre continuar no ritmo de estudos.</p>
+                </div>
+            </div>
+                  <hr />  
+            <div class="row mt-2 mb-4 mr-3">
+                <div class="col-md-3 col-sm-12" id="item6">
+                  <h5>Linus Torvalds.</h5>
+                  <img src="imagens/linus.jpg"  class="img-fluid" title="Linus Torvalds.">
+                </div>
+                <div class="col-md-9 col-sm-12">
+                  <h4>REFERÊNCIA como um programador.</h4>
+            	     <p>Um estopim para os sistemas GNU/Linux, foi o desenvolvedor do KERNEL dos sistemas operacionais GNU/Linux baseado no MINIX, com apenas 20 anos começou a estudar Computação, sendo que mais tarde 2 anos depois desenvolveu suas primeiras versões Linux. <br />
+                   &emsp; &ensp; Linus é um programador que quer a ascensão dos seus sistemas e softwares Gratuitos/Open-Source e foi pelo desejo de criar algo Free para que qualquer pessoa pudesse usufluir não apenas de um S.O. Gratuito, mas de Ferramentas Gratuitas que tenham uma segurança maior, alem de se preocupar com a privacidade do usuário final, e de .</p>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+<!-------------------------------------------- Cartões para leitura  ----------------------------------------------------------------->
+    <div class="row mb-5 mt-2 ml-4 mr-4 justify-content-sm-center">
+        <div class="col-12 mb-3 text-center">
+          <h1 class="display-4 font-weight-normal" id="ferramentas"><i class="fa fa-wrench" aria-hidden="true"></i> Ferramentas.</h1>
+        </div>  
+      <div class="col-sm-6 col-md-4">
+        <div class="card mb-3">
+            <img src="imagens/calc.jpg" class="card-img-top">
+          <div class="card-body">
+              <h4 class="card-title">Utilizar Calculadora em PHP.</h4>
+              <h6 class="card-subtitle mb-2 text-muted">utilize uma calculadora online.</h4>  
+              <p class="card-text">Um projeto desenvolvido em PHP simples, uma calculadora básica.</p>
+          </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">SOMA.</li>
+              <li class="list-group-item">SUBTRAÇÃO.</li>
+              <li class="list-group-item">MULTIPLICAÇÃO.</li>
+              <li class="list-group-item">DIVISÃO.</li>
+            </ul>
+          <div class="card-body">          
+              <div class="flex-column">
+            	   <a href="#" class="d-flex card-link" data-toggle="modal" data-target="#siteModal">Descrição técnica da calculadora.</a>
+            	   <a href="calculadora.php" class="d-flex card-link btn btn-primary ml-0 mt-2" target="_blank">Abrir calculadora.</a>
+          	  </div>
+          </div>
+            <div class="card-footer text-muted">Utilizando as classes: <b>card-body</b>, <b>card-footer text-muted</b>, <b>card-title</b>, <b>card-subtitle</b> e <b>card-link</b> Utilizando <b>MODAL!!</b></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card mb-3">      
+          <img src="imagens/idade.jpg" height="270px" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title"><B>Identificar de idade</B> usando JS.</h4>
+            <h6 class="card-subtitle mb-2 text-muted">receba uma imagem de uma pessoa.</h4>  
+            <p class="card-text">Informe 2 parâmetros: Ano de Nascimento e Gênero, e receba uma foto de uma pessoa que contem os mesmo parâmetros informados por você.</p>
+          </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Utiliza javascript PURO.</li>
+              <li class="list-group-item">Laços de repetição.</li>
+            </ul>
+          <div class="card-body"> 
+            <a href="#" class="d-flex card-link" data-toggle="modal" data-target="#siteModa2">Descrição técnica do identificador.</a>
+            <a href="verificadorDEidade.html" class="d-flex card-link btn btn-primary ml-0 mt-2" target="_blank">Abrir o Identificador de Idade</a>
+          </div>
+          <div class="card-footer text-muted"><b>Não tem nada com jquery!!!</b></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">      
+        <div class="card mb-3">
+          <img src="imagens/cont.jpg" height="220px" class="card-img-top">
+          <div class="card-body">
+              <h4 class="card-title">Contador de numero com intervalo em JS.</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Receba numero em um intervalo informado.</h4>  
+              <p class="card-text">Informe 3 parâmetros: Inicio fim e Passo. O INICIO irá marcar o numero que irá começar, o FIM é o numero no final do intervalo e o PASSO é o intervalo de um numero para o outro.</p>
+          </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">DOM, seleção de inputs.</li>
+              <li class="list-group-item">Laços de repetição.</li>
+            </ul>
+          <div class="card-body"> 
+            <a href="#" class="d-flex card-link" data-toggle="modal" data-target="#siteModa3">Descrição técnica do Contador.</a>
+            <a href="Contador.html" class="d-flex card-link btn btn-primary ml-0 mt-2" target="_blank">Abrir Contador de numeros.</a>
+          </div>
+          <div class="card-footer text-muted">Também não utiliza o FrameWork Jquery.</div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+<!-------------------------------------------- Videos e descrição ----------------------------------------------------------------->
+   <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4 text-primary font-weight-normal" id="midia"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Conteúdo de WebDevelopment.</h1>
+            <p class="lead">Midia, relativa ao Webdevelopment. Constitui-se de videos explicativos afim de agregar conhecimento variado. Utiliza Jumbrotron, navpills e embreds responsivos.</p><hr>
+          </div>
+        </div>
+        <div class="row">  
+          <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist"> 
+              <li class="nav-item"><a href="#nav-item-01" class="nav-link active" id="nav-pills-01" data-toggle="pill" >Entendendo Bootstrap em 5 minutos.</a></li>
+              <li class="nav-item"><a href="#nav-item-02" class="nav-link" id="nav-pills-02" data-toggle="pill" >Indisponivel.</a></li>
+              <li class="nav-item"><a href="#nav-item-03" class="nav-link" id="nav-pills-03" data-toggle="pill" >Indisponivel.</a></li>
+            </ul>
+
+            <div class="tab-content" id="nav-pills-content">
+
+              <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                
+                <div class="row">
+                  <div class="col-sm-12 col-md-8">
+
+                    <div class="embred-responsive embred-responsive-16by9"> 
+                      <iframe width="720" height="350" src="https://www.youtube.com/embed/yalxT0PEx8c" class="embred-responsive-item" ></iframe>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                    <p>Entenda o básico de Bootrstap-4 em 5 minutos, caso você não saiba inglês, agora é uma boa hora para treina-lo hein.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                
+                <div class="row">
+                  <div class="col-sm-12 col-md-8">
+
+                    <div class="embred-responsive embred-responsive-16by9"> 
+                      <iframe width="720" height="350" src="" class="embred-responsive-item" ></iframe>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                    <p>.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                
+                <div class="row">
+                  <div class="col-sm-12 col-md-8">
+
+                    <div class="embred-responsive embred-responsive-16by9"> 
+                      <iframe width="720" height="350" src="" class="embred-responsive-item" ></iframe>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                    <p>.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container" id="rodape">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4 text-white"><i class="fa fa-paper-plane mr-4 text-white" aria-hidden="true"></i>Cadastre para receber atualizações.</h1>
+          </div>
+
+        </div>        
+<!-------------------------------------------- Formulário ----------------------------------------------------------------->
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+        
+         <form>
+            <div class="form-row">
+
+              <div class="form-group col-sm-6">
+                <label class="text-white" for="inputNome">Seu Nome:</label>
+                <input type="text" class="form-control" id="inputNome"  maxlength="50" placeholder="Digite seu Nome.">
+              </div>
+              <div class="form-group col-sm-6">
+                <label class="text-white" for="inputSobrenome">Seu Sobrenome:</label>
+                <input type="text" class="form-control" id="inputSobrenome" maxlength="50" placeholder="Digite seu Sobrenome.">
+              </div>
+
+            </div>
+
+            <div class="form-row"> <!-- Endereço abaixo --->
+
+              <div class="form-group col-sm-12">
+                <label class="text-white" for="inputEnd">Seu Endereço:</label>
+                <input type="text" name="E-mail" class="form-control" id="inputEnd" maxlength="50" placeholder="Digite seu Endereço completo.">
+              </div>
+
+            </div> 
+            <div class="form-row">  <!-- Cidade, Estado e CEP abaixo --->
+              <div class="form-group col-sm-5">
+                <label class="text-white" for="inputCidade" >Sua cidade:</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Digite o nome da sua cidade.">
+              </div>
+              <div class="form-group col-sm-4">
+                <label class="text-white" for="inputEst" >Seu Estado:</label>
+                <select class="form-control" id="inputEst">
+                  <option value="Acre">Acre.</option><option value="Alagoas">Alagoas.</option><option value="Amapá">Amapá.</option><option value="Amazonas">Amazonas.</option><option value="Bahia">Bahia.</option>
+                  <option value="Ceará">Ceará.</option><option value="Distrito-Federal">Distrito Federal.</option><option value="Espírito-Santo">Espírito Santo.</option><option value="Goiás">Goiás.</option><option value="Maranhão">Maranhão.</option>
+                  <option value="Mato-Grosso">Mato Grosso.</option><option value="Mato-Grosso-do-Sul">Mato Grosso do Sul.</option><option value="Minas-Gerais">Minas Gerais.</option><option value="Pará">Pará.</option>
+                  <option value="Paraíba">Paraíba.</option><option value="Paraná">Paraná.</option><option value="Pernambuco">Pernambuco.</option><option value="Piauí">Piauí.</option><option value="Rio-de-Janeiro">Rio de Janeiro.</option>
+                  <option value="Rio-Grande-do-Norte">Rio Grande do Norte.</option><option value="Rio-Grande-do-Sul">Rio Grande do Sul.</option><option value="Rondônia">Rondônia.</option><option value="Roraima">Roraima.</option>
+                  <option value="Santa-Catarina">Santa Catarina.</option><option value="São-Paulo">São Paulo.</option><option value="Sergipe">Sergipe.</option><option value="Tocantins">Tocantins.</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-2">
+
+                <label class="text-white" for="inputCep">Seu CEP:</label>
+                <input type="text" name="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)" id="inputCep" class="form-control">
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <div class="form-check">
+                  <label class="form-check-label text-white"><input type="checkbox" class="form-check-input">Desejo receber novidades por E-mail!</label>
+
+                </div>
+              </div>    
+            </div>
+
+                <div class="form-row">
+                  <div class="col-sm-12">
+                     <button type="submit" class="btn btn-primary">Enviar!!</button>
+                     <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-conteiner="body" data-toggle="popover" data-placement="right" data-trigger="focus" title="Ajuda" data-content="Usarei os dados para informar sobre atualizações futuras?">Ajuda?</a> <!--  data-placement="Define a posição que o popover irá aparecer" data-trigger é o evento que ativar o popover no caso focus porque ele irá sumir ao clickar fora do botão-->
+                  </div>          
+                </div> 
+
+         </form>
+        </div>
+      </div>
+
+      <div class="row">
+        
+          <div class="col-12 mb-3"><hr></div>
+
+          <div class="col-sm-4 text-white">
+            <h3>Grato!</h3>
+              <p>Mais um projeto desenvolvido por mim para treinar minhas habilidades e desenvolver conhecimento, fiz com muito cuidado para não desviar do objetivo inicial do projeto.</p>
+              <p>Obrigado por visitar esse site, espero que você tenha compreendido a mensagem que quis passar aqui.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-white">Menu</h3>
+
+            <div class="list-group">
+              <a href="https://drive.google.com/file/d/1OKkDntHxMtsw3eVX1jgZL5cfgTPjz-f8/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action list-group-item-dark"><b>Meu Curriculo.</b></a>
+              <a href="#emailss" id="email" class="list-group-item list-group-item-action text-dark btn-primary"><b>Contato.</b></a>
+              <a href="#Modalinicial" id="grato" class="list-group-item list-group-item-action text-dark btn-danger"><b>Obrigado por acessar.</b></a>
+            </div>
+
+          </div>
+          <div class="col-sm-4 justify-content-center text-white">
+              <h3>Social (desativado)</h3>
+            <div class="btn-group-vertical btn-block btn-group-lg">
+              <a class="btn btn-outline-primary bg-light" href="https://www.facebook.com/paulo.ricardo.167189" target="_blank"><i class="fa fa-facebook-official mr-2" aria-hidden="true"></i>Facebook.</a>
+              <a class="btn btn-outline-info bg-info text-light" href="#"><i class="fa fa-twitter-square mr-2" aria-hidden="true"></i>Twitter.</a>
+              <a class="btn btn-outline-danger bg-warning" href="#"><i class="fa fa-Instagram mr-2" aria-hidden="true"></i>Instagram.</a>
+            </div>
+          </div>
+      
+          <div class="col-12 mt-5">
+            <blockquote class="blockquote text-center text-white">
+                <p class="mb-0">"A questão não é: 'o que queremos saber sobre as pessoas'. A questão é: 'o que as pessoas querem dizer sobre elas mesmas?'</p>
+                <footer class="blockquote-footer">Mark Zuckerberg <cite title="Título">Criador do Facebook</cite></footer>
+            </blockquote>
+          </div>
+      </div>
+
+    </div> 
+<!---------------------------------------------------------- Modal Abaixo ------------------------------------------------------------------>  
+	   <div class="modal" id="siteModal" tabindex="-1" role="dialog">
+	     <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	           <div class="modal-header">
+	             <h5 class="modal-title">Operadores e Funções PHP.</h5>
+	             <button type="button" class="close" data-dismiss="modal">
+	               <span>&times;</span>
+	             </button>
+	           </div>
+	           <div class="modal-body">
+	             <p>Utiliza-se Funções <strong>IF, ELSEIF, ELSE</strong> para simular cada caso em que é escolhido uma operação. Então calcula-se e mostra o resultado.</p>
+	           </div>
+	           <div class="modal-footer">
+	            <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar!</button>
+	           </div>
+	        </div>
+	      </div>
+	    </div>
+<!-- Encerra modal --------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------- Modal 2 Abaixo ------------------------------------------------------------>  
+     <div class="modal" id="siteModa2" tabindex="-1" role="dialog">
+       <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">Operadores, Funções e DOM Javascript puro.</h5>
+               <button type="button" class="close" data-dismiss="modal">
+                 <span>&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <p>Utiliza-se Funções <strong>Click, IF, ELSE IF, ELSE</strong> para simular cada caso em que é escolhido um parâmetro. Então calcula-se e mostra o resultado.</p>
+             </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar!</button>
+             </div>
+          </div>
+        </div>
+      </div>
+<!-- Encerra modal --------------------------------------------------------------------------------------------------------------------->   
+<!---------------------------------------------------------- Modal 3 Abaixo ------------------------------------------------------------>  
+     <div class="modal" id="siteModa3" tabindex="-1" role="dialog">
+       <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">Operadores, Funções e DOM Javascript puro.</h5>
+               <button type="button" class="close" data-dismiss="modal">
+                 <span>&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <p>Utiliza-se as Funções <strong>Click, FOR, WHILE.</strong> Deve-se ser informado o parâmetro inicial e final. Depois inicia um laço de repetição inclementando o numero do intervalo ao numero inicial varias vezes até chegar ao numero final.</p>
+             </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar!</button>
+             </div>
+          </div>
+        </div>
+      </div>
+<!-- Encerra modal --------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------- Modal 3 Abaixo ------------------------------------------------------------>  
+     <div class="modal" id="Modalinicial" tabindex="-1" role="dialog">
+       <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">Meu Projeto de site Responsivo Leia (Importante).</h5>
+               <button type="button" class="close" data-dismiss="modal">
+                 <span>&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <p>Antes de acessar esse site, tenha em mente que ele serve como modelo experimental, estou treinando habilidades com Desenvolvimento-Web. Tenha em mente que ninguem sabe tudo, e isso é um incentivo a buscar por mais conhecimento. Espero que você goste desse projeto embora seja repleto de conteúdo técnico sobre programação de sites e contenha informação pessoal minha. <br />
+               &emsp;    Esse site está em desenvolvimento, portanto alguns links como: Facebook, Twitter e Instagram estão desativados no momento. se quizer dar um FeedBack vá no rodapé do site e clique em contatos  
+               </p>
+               <p class="text-primary"><strong>&#9749; Gratidão!! &#9996;</strong></p>
+             </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-danger btn-outline-light" data-dismiss="modal">Fechar!</button>
+             </div>
+          </div>
+        </div>
+      </div>
+<!-- Encerra modal --------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------- Modal 4 Abaixo ------------------------------------------------------------>  
+     <div class="modal" id="Modalemail" tabindex="-1" role="dialog">
+       <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">Quer me contatar?</h5>
+               <button type="button" class="close" data-dismiss="modal">
+                 <span>&times;</span>
+               </button>
+             </div>
+             <div class="modal-body text-center">
+               <h5>&#128231; Hotmail: </h5><p>paulopl@hotmail.com</p>
+               <h5>&#128231; Gmail: </h5><p>palmeida.ipms@gmail.com</p>
+               <h5>&#128241; Telefone: </h5><p>(19) 98243-7446</p>
+             </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-danger btn-outline-light" data-dismiss="modal">Fechar!</button>
+             </div>
+          </div>
+        </div>
+      </div>
+<!-- Encerra modal --------------------------------------------------------------------------------------------------------------------->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+  function trocar(id){
+    id.innerHTML = "<i class='fa fa-code mr-4 text-primary' aria-hidden='true'></i>Site desenvolvido para teste";
+  }
+  </script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+      $(function () {
+          $('[data-toggle="popover"]').popover()
+      })
+      $(document).ready(function(){ // Modal iniciado ao entrar no site
+        $('#Modalinicial').modal("show");
+      });
+      $("#grato").click(function(){
+        $('#Modalinicial').modal("show");
+      })
+      $("#email").click(function(){
+        $('#Modalemail').modal("show");
+      })
+
+      var fe = $('#fe');
+      var mi = $('#mi');
+      var at = $('#at');
+      var td = [fe,mi,at];
+      
+        td[0].click(function(e){
+          e.preventDefault(); // Pega o input com id = fe e deixa Default seus eventos
+          var id = $(this).attr('href'), // pega o valor href do elemento
+              targetOffset = $(id).offset().top;
+          $('html, body').animate({
+            scrollTop: targetOffset}, 1000);
+              console.log(targetOffset);
+        });
+      
+        td[1].click(function(e){
+          e.preventDefault();
+          var id = $(this).attr('href'),
+              targetOffset = $(id).offset().top;
+          $('html, body').animate({
+            scrollTop: targetOffset}, 1000);
+              console.log(targetOffset);
+        });
+      
+        td[2].click(function(e){
+          e.preventDefault();
+          var id = $(this).attr('href'),
+              targetOffset = $(id).offset().top;
+           $('html, body').animate({
+            scrollTop: targetOffset}, 1000);
+              console.log(targetOffset);
+        });
+        function formatar(mascara, documento){
+          var i = documento.value.length;
+          var saida = mascara.substring(0,1);
+          var texto = mascara.substring(i)
+        if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+          }
+        }
+    </script>
+
+  </body>
+</html>

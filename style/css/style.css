@@ -1,0 +1,15 @@
+.scrollspySite {
+  position: relative;
+  overflow: auto;
+  height: 355px; 
+}
+body{
+	background-image: linear-gradient(to bottom, white, white,rgba(51,155,240,0.7), black);
+}
+
+.slid{
+	width: 100%;
+	margin: auto;
+	height: 500px;
+}
+/*# sourceMappingURL=style.css.map */
